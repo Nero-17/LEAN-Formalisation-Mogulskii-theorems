@@ -1,0 +1,25 @@
+name = "MogulskiiLean"
+defaultTargets = ["Mogulskii"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "520045ab14e26149ee970e2e617ca04b09bde5d6"
+
+[[lean_lib]]
+name = "Mogulskii"
+
+[[lean_lib]]
+name = "BrownianMotion"
+srcDir = "vendor"
+globs = ["BrownianMotion.+"]
+
+[[lean_lib]]
+name = "KolmogorovExtension4"
+srcDir = "vendor"
+globs = ["KolmogorovExtension4.+"]
+
+[[lean_lib]]
+name = "MathlibExt"
+srcDir = "vendor"
+globs = ["MathlibExt.+"]
